@@ -1,0 +1,168 @@
+/* ------------font ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@500&display=swap');
+/* --------------------------------first section
+                                    -------------------------------------  */
+ body{
+     font-family: 'Poppins', sans-serif;
+ } 
+ .adp{
+      margin-left: 100px;
+      color: rgb(61, 61, 61);
+      font-size: x-large;
+      margin-top: 50px;
+ }  
+ .h1-tag{
+    font-size: 2.8em;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+}                                
+.first-section{
+    display: flex;
+    width: 80%;
+    margin-left: 100px;
+}
+.half-width{
+    width: 45%;
+}
+.half-width img{
+    width: 80%;
+    margin-left: 180px;
+}
+p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(77, 77, 77);
+}
+#dmp{
+    border: 3px solid fuchsia;
+    background-color: fuchsia;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    
+}
+.hypen{
+    width: 1330px;
+    height: 60px;
+    border: 1px solid rgb(77, 77, 77);
+}
+/*---------------------------- images-part
+                                        ------------------------ */
+.images{
+    display:flex;
+    gap: 25%;
+    
+     border-bottom: 1px solid rgb(126, 123, 126);
+      border-top: 1px solid rgb(126, 123, 126);
+
+}
+.png{
+   
+    height: 0%;
+    margin-left: 100px;
+    width: 0%;
+}
+/* ----------------------------------popular-part
+                                                ----------------------------- */
+.populars{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 110px;
+    grid-gap: 40px;
+
+
+}
+.popular-head{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(61, 61, 61);
+}
+.popular-1{
+    background-color: rgb(255, 238, 238);
+    border-radius: 10px;
+
+}
+.popular-11{
+    margin-left: 20px;
+    margin-top: 20px;
+
+    
+    
+}
+.popular-banner img{
+    width: 300px;
+    height: 240px;
+    
+
+}  
+.filled{
+    color: rgb(253, 219, 24);
+}
+.popular-paragraph{
+    font: size 10px;
+    font-weight: 0px;
+}
+#hakim{
+    font-size:1.3em;
+    text-decoration: none;
+    width:45%;
+    margin-left:260%
+}
+/* -----------------------------third-part
+                                        ------------------------------- */
+.third-part{
+    display:flex;
+    width: 80%;
+    margin-left: 100px;
+}
+.half-width-1{
+    width: 100%;
+    margin-left: 130px;
+}
+#mannan{
+     border: 3px solid fuchsia;
+    background-color: fuchsia;
+    color: white;
+    padding: 8 20px;
+    text-decoration: none;
+}
+
+/*------------------------------- footer part 
+                                            ----------------------------- */
+
+footer{
+    text-align: center;
+    background-color: rgb(35, 23, 90);
+}
+.dipo{
+    color: white;
+}
+
+/*------------------------------ media queries
+                                            ---------------------------  */
+
+
+/*---Mobile Devices ---*/
+@media only screen and (max-width:688px) {
+    
+     .first-section, .populars, .third-part, .footer, .images{
+        flex-direction: column;
+     }
+     .half-width,  .populars, .third-part, .footer, .images{
+         grid-template-columns: repeat(1, 1fr);
+     }
+    
+}
+
+/* ----------Tablet Devics  ------------- */
+@media only screen and (min-width:900px) and (max-width:1123px){
+    .first-section, .populars, .third-part, .footer, .images{
+        flex-direction: column;
+     }
+     .half-width,  .populars, .third-part, .footer, .images{
+         grid-template-columns: repeat(2, 1fr);
+     }
+    
+}
+
